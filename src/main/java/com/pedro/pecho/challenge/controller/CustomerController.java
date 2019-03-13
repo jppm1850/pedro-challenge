@@ -15,7 +15,8 @@ import java.util.List;
  * 2019-03-12
  **/
 @CrossOrigin
-@RestController("/challenge/v1")
+@RestController
+@RequestMapping("/challenge/v1")
 public class CustomerController {
 
     @Autowired
