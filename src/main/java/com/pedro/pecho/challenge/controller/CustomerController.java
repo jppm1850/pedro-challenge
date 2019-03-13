@@ -20,7 +20,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping(value = "/status")
+    @RequestMapping(value = "/status",method = RequestMethod.GET)
     public String checkStatus() {
         return "ok";
     }
