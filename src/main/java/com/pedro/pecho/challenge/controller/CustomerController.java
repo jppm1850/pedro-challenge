@@ -14,6 +14,7 @@ import java.util.List;
  * juniorpedro
  * 2019-03-12
  **/
+@CrossOrigin
 @RestController("/challenge/v1")
 public class CustomerController {
 
