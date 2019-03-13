@@ -6,10 +6,7 @@ import com.pedro.pecho.challenge.model.CustomerRequest;
 import com.pedro.pecho.challenge.model.CustomerResponse;
 import com.pedro.pecho.challenge.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,6 +19,11 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
+
+    @GetMapping(value = "/status")
+    public String checkStatus() {
+        return "ok";
+    }
 
     @RequestMapping(value = "/customers",method = RequestMethod.POST)
     public void saveCustomer(@RequestBody CustomerRequest customerRequest){
