@@ -1,9 +1,6 @@
 # pedro-challenge
 
 
-Ruta Swagger :http://pedro-challenge.us-east-1.elasticbeanstalk.com/swagger-ui.html
-
-
 
 # Endpoints Disponible
 
